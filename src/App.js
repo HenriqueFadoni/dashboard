@@ -8,16 +8,14 @@ import InOffice from './containers/InOffice';
 
 import './sass/main.scss';
 
-function App() {
-  return (
-    <div className="app__container">
-      <OnlineUsers />
-      <WeatherCond />
-      <WaterPlant />
-      <DrinkCounter />
-      <InOffice />
-    </div>
-  );
-}
+const App = () => (
+  <div className="app__container">
+    <OnlineUsers />
+    <WeatherCond />
+    <WaterPlant />
+    <DrinkCounter />
+    <InOffice />
+  </div>
+);
 
 export default App;

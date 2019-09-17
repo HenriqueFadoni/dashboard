@@ -7,7 +7,11 @@
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: auto;
 
-    background-image: linear-gradient(to right, $color-primary, $color-primary-lighten);
+    background-image: linear-gradient(
+      to right, 
+      $color-primary, 
+      $color-primary-lighten
+    );
     border-radius: 0.5rem;
 
     box-shadow: 1.1rem 1rem 4.2rem -1.9rem $color-secondary;
@@ -40,119 +44,6 @@
         background-color: $color-white;
         color: $color-green;
       }
-    }
-  }
-
-  &__weather {
-    &--container {
-      display: flex;
-      flex-direction: column;
-      margin: 2rem;
-      padding: 2rem;
-
-      grid-column-start: 2;
-      grid-column-end: -1;
-
-      grid-row-start: 2;
-      grid-row-end: 3;
-
-      background-color: rgba($color-white, 0.25);
-      justify-content: center;
-      align-content: center;
-    }
-
-    &--degrees {
-      font-size: 6rem;
-      text-align: center;
-    }
-  }
-
-  &__waterplant {
-    &--warning,
-    &--container {
-      display: flex;
-      flex-direction: column;
-
-      margin: 2rem;
-      padding: 1rem;
-
-      justify-content: center;
-      align-items: center;
-      transition: all 0.2s ease-in;
-    }
-
-    &--container {
-      background-color: $color-green;
-    }
-
-    &--warning {
-      background-color: red;
-    }
-
-    &__button {
-      width: 9rem;
-      padding: 1rem;
-      border: 3px solid $color-white;
-      color: $color-white;
-      background-color: transparent;
-      transition: transform 0.2s ease-in;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-
-      &:active {
-        transform: scale(0.9);
-      }
-    }
-
-    &--text {
-      font-size: 1.2rem;
-      margin: 0.5rem;
-    }
-
-    &--days {
-      font-size: 5rem;
-      font-weight: 200;
-      margin: 0.5rem;
-    }
-  }
-
-  &__drinkcounter {
-    &--container {
-      display: flex;
-      flex-direction: column;
-      background-color: rgba($color-white, 0.25);
-
-      margin: 2rem;
-      padding: 1rem;
-
-      justify-content: center;
-      align-items: center;
-
-      &-content {
-        display: flex;
-        flex-direction: row;
-      }
-    }
-
-    &--btn-container {
-      display: flex;
-      flex-direction: column;
-      margin-left: 2rem;
-      justify-content: center;
-    }
-
-    &--buttons {
-      font-size: 2rem;
-      color: $color-white;
-      border: none;
-      background-color: transparent;
-    }
-
-    &--number {
-      font-size: 5rem;
-      font-weight: 200;
     }
   }
 }

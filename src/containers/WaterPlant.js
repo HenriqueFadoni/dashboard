@@ -27,14 +27,18 @@ const WaterPlant = () => {
     <div 
       className={
         warning 
-        ? "app__waterplant--warning"
-        : "app__waterplant--container"
+        ? "waterplant__warning"
+        : "waterplant__container"
       }
     >
-      <h3 className="app__waterplant--text">Last Day the plant was Watered:</h3>
-      <h3 className="app__waterplant--days">{lastWatered}</h3>
+      <h3 className="waterplant__text">
+        Last Day the plant was Watered:
+      </h3>
+      <h3 className="waterplant__days">
+        {lastWatered}
+      </h3>
       <button
-        className="app__waterplant__button"
+        className="waterplant__button"
         onClick={waterHandler}
       >
         Water it

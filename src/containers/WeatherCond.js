@@ -19,8 +19,8 @@ const WeatherCond = () => {
   }, []);
 
   return (
-    <div className="app__weather--container">
-      <div className="app__weather--degrees">
+    <div className="weather__container">
+      <div className="weather__degrees">
         Outside Temp: {outTemp}
       </div>
     </div>

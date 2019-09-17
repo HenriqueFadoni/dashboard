@@ -1,5 +1,15 @@
+// Abstract
 @import './abstract/variable';
+
+//Base
 @import './base/base';
 @import './base/typography';
+
+// Components
 @import './components/inoffice';
+@import './components/weathercond';
+@import './components/waterplant';
+@import './components/drinkcounter';
+
+// Pages
 @import './pages/index';
