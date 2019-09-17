@@ -1,8 +1,8 @@
 import React from 'react';
 
 const OnlineUsers = props => (
-  <div>
-    <h3>
+  <div className="app__header--container">
+    <h3 className="app__header--text">
       ONLINE USERS:
         <span>
           {Math.round(Math.random() * 100)}

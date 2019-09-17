@@ -16,4 +16,34 @@
 
     box-shadow: 1.1rem 1rem 4.2rem -1.9rem rgba(0, 0, 0, 0.75);
   }
+
+  &__header {
+    &--container {
+      display: flex;
+
+      grid-column-start: 1;
+      grid-column-end: -1;
+
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 3rem;
+
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    &--text {
+      display: inline-block;
+      font-size: 2rem;
+
+      & span {
+        margin-left: 1rem;
+        padding: 1rem;
+        background-color: white;
+        color: forestgreen;
+      }
+    }
+  }
 }

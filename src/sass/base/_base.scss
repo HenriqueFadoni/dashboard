@@ -9,7 +9,8 @@
 html {
   font-size: 62.5%; // 10 px === 1rem
   font-weight: 300;
-  font-family: 'Nunito', cursive;
+  font-family: "Nunito", cursive;
+  color: $color-white;
 }
 
 body {
@@ -21,6 +22,6 @@ body {
 
 a,
 button {
-    outline: none;    
-    cursor: pointer;
+  outline: none;
+  cursor: pointer;
 }
