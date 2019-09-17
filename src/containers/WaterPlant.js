@@ -21,8 +21,9 @@ const WaterPlant = () => {
   const waterHandler = () => setLastWatered(today);
 
   return (
-    <div>
-      <h3>Last Watered: {lastWatered}</h3>
+    <div className="app__waterplant--container">
+      <h3 className="app__waterplant--text">Last Day the plant was Watered:</h3>
+      <h3 className="app__waterplant--days">{lastWatered}</h3>
       <button onClick={waterHandler}>Water it</button>
     </div>
   );
