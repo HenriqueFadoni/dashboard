@@ -1,0 +1,19 @@
+.app {
+  &__container {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    background-image: linear-gradient(
+      to right, 
+      $color-primary, 
+      $color-primary-lighten
+    );
+    border-radius: 0.5rem;
+
+    box-shadow: 1.1rem 1rem 4.2rem -1.9rem rgba(0, 0, 0, 0.75);
+  }
+}

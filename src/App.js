@@ -6,9 +6,11 @@ import WaterPlant from './containers/WaterPlant';
 import DrinkCounter from './containers/DrinkCounter';
 import InOffice from './containers/InOffice';
 
+import './sass/main.scss';
+
 function App() {
   return (
-    <div className="App">
+    <div className="app__container">
       <OnlineUsers />
       <WeatherCond />
       <WaterPlant />
