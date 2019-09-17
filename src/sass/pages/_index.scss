@@ -68,6 +68,7 @@
   }
 
   &__waterplant {
+    &--warning,
     &--container {
       display: flex;
       flex-direction: column;
@@ -77,24 +78,31 @@
 
       justify-content: center;
       align-items: center;
+      transition: all .2s ease-in;
+    }
 
+    &--container {
       background-color: $color-green;
+    }
 
-      & button {
-        width: 9rem;
-        padding: 1rem;
-        border: 3px solid $color-white;
-        color: $color-white;
-        background-color: transparent;
-        transition: transform 0.2s;
+    &--warning {
+      background-color: red;
+    }
 
-        &:hover {
-          transform: scale(1.1);
-        }
+    &__button {
+      width: 9rem;
+      padding: 1rem;
+      border: 3px solid $color-white;
+      color: $color-white;
+      background-color: transparent;
+      transition: transform 0.2s ease-in;
 
-        &:active {
-          transform: scale(0.9);
-        }
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.9);
       }
     }
 

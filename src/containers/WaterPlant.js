@@ -13,18 +13,32 @@ const WaterPlant = () => {
   useEffect(() => {
     const daysRemaining = today - lastWatered;
 
-    if (daysRemaining >= 3) {
+    if (daysRemaining >= 1) {
       setWarning(true);
     }
-  }, []);
+  },[]);
 
-  const waterHandler = () => setLastWatered(today);
+  const waterHandler = () => {
+    setLastWatered(today);
+    setWarning(false);
+  };
 
   return (
-    <div className="app__waterplant--container">
+    <div 
+      className={
+        warning 
+        ? "app__waterplant--warning"
+        : "app__waterplant--container"
+      }
+    >
       <h3 className="app__waterplant--text">Last Day the plant was Watered:</h3>
       <h3 className="app__waterplant--days">{lastWatered}</h3>
-      <button onClick={waterHandler}>Water it</button>
+      <button
+        className="app__waterplant__button"
+        onClick={waterHandler}
+      >
+        Water it
+      </button>
     </div>
   );
 };
