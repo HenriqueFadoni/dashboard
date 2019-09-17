@@ -12,11 +12,15 @@ const DrinkCounter = () => {
   }
 
   return (
-    <div>
-      <h1>{counter}</h1>
-      <h3>Number of Drinks in the Fridge</h3>
-      <button onClick={addHandler}>+</button>
-      <button onClick={subtractHandler}>-</button>
+    <div className="app__drinkcounter--container">
+      <h3>Number of Drinks left in the Fridge:</h3>
+      <div className="app__drinkcounter--container-content">
+        <h1 className="app__drinkcounter--number">{counter}</h1>
+        <div className="app__drinkcounter--btn-container">
+          <button className="app__drinkcounter--buttons" onClick={addHandler}>+</button>
+          <button className="app__drinkcounter--buttons" onClick={subtractHandler}>-</button>
+        </div>
+      </div>
     </div>
   );
 };

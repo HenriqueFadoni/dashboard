@@ -78,7 +78,7 @@
 
       justify-content: center;
       align-items: center;
-      transition: all .2s ease-in;
+      transition: all 0.2s ease-in;
     }
 
     &--container {
@@ -108,12 +108,51 @@
 
     &--text {
       font-size: 1.2rem;
-      margin: .5rem;
+      margin: 0.5rem;
     }
 
     &--days {
       font-size: 5rem;
-      margin: .5rem;
+      font-weight: 200;
+      margin: 0.5rem;
+    }
+  }
+
+  &__drinkcounter {
+    &--container {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba($color-white, 0.25);
+
+      margin: 2rem;
+      padding: 1rem;
+
+      justify-content: center;
+      align-items: center;
+
+      &-content {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &--btn-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+      justify-content: center;
+    }
+
+    &--buttons {
+      font-size: 2rem;
+      color: $color-white;
+      border: none;
+      background-color: transparent;
+    }
+
+    &--number {
+      font-size: 5rem;
+      font-weight: 200;
     }
   }
 }
