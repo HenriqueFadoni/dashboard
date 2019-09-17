@@ -1,0 +1,21 @@
+.inoffice {
+  &__container {
+    padding: 1rem;
+    margin: 2rem;
+    color: $color-primary;
+    background-color: $color-white;
+    overflow: scroll;
+  }
+
+  &__title {
+    text-align: center;
+    border-bottom: 1px solid $color-primary;
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    padding: .5rem;
+  }
+}

@@ -10,11 +10,17 @@ const InOffice = () => {
   ]);
 
   const renderList = workingToday.map((person, i) => (
-    <div key={i}>{person}</div>
+    <div 
+      key={i}
+      className="inoffice__item"
+    >
+      {person}
+    </div>
   ));
 
   return (
-    <div>
+    <div className="inoffice__container">
+      <h1 className="inoffice__title">People in Office today</h1>
       {renderList}
     </div>
   );
