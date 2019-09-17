@@ -16,7 +16,7 @@ const WaterPlant = () => {
     if (daysRemaining >= 1) {
       setWarning(true);
     }
-  },[]);
+  }, [today, lastWatered]);
 
   const waterHandler = () => {
     setLastWatered(today);
@@ -24,11 +24,11 @@ const WaterPlant = () => {
   };
 
   return (
-    <div 
+    <div
       className={
-        warning 
-        ? "waterplant__warning"
-        : "waterplant__container"
+        warning
+          ? "waterplant__warning"
+          : "waterplant__container"
       }
     >
       <h3 className="waterplant__text">
