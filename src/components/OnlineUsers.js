@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OnlineUsers = props => (
+const OnlineUsers = () => (
   <div className="app__header--container">
     <h3 className="app__header--text">
       ONLINE USERS:
