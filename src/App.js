@@ -1,12 +1,14 @@
 import React from 'react';
 
-import OnlineUsers from './containers/OnlineUsers';
+import OnlineUsers from './components/OnlineUsers';
 import WeatherCond from './containers/WeatherCond';
 
 function App() {
+  const randomNum = Math.round(Math.random() * 100);
+
   return (
     <div className="App">
-      <OnlineUsers />
+      <OnlineUsers randomNum={randomNum}/>
       <WeatherCond />
     </div>
   );
