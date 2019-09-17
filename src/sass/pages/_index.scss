@@ -4,14 +4,10 @@
     width: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: auto;
 
-    background-image: linear-gradient(
-      to right, 
-      $color-primary, 
-      $color-primary-lighten
-    );
+    background-image: linear-gradient(to right, $color-primary, $color-primary-lighten);
     border-radius: 0.5rem;
 
     box-shadow: 1.1rem 1rem 4.2rem -1.9rem rgba(0, 0, 0, 0.75);
@@ -44,6 +40,30 @@
         background-color: white;
         color: forestgreen;
       }
+    }
+  }
+
+  &__weather {
+    &--container {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      padding: 2rem;
+
+      grid-column-start: 2;
+      grid-column-end: -1;
+
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      background-color: rgba($color-white, 0.25);
+      justify-content: center;
+      align-content: center;
+    }
+
+    &--degrees {
+      font-size: 6rem;
+      text-align: center;
     }
   }
 }
