@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const DrinkCounter = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(5);
 
   const addHandler = () => setCounter(counter + 1);
 
