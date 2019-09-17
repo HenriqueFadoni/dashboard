@@ -5,8 +5,8 @@ const OnlineUsers = props => (
     <h3>
       ONLINE USERS:
         <span>
-        {props.randomNum}
-      </span>
+          {Math.round(Math.random() * 100)}
+        </span>
     </h3>
   </div>
 );
