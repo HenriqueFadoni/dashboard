@@ -11,6 +11,16 @@ html {
   font-weight: 300;
   font-family: "Nunito", cursive;
   color: $color-white;
+
+  @include resize(fhd) {
+    font-size: 80%;
+  }
+  @include resize(tablet) {
+    font-size: 40%;
+  }
+  @include resize(phone) {
+    font-size: 30%;
+  }
 }
 
 body {
@@ -18,6 +28,10 @@ body {
   line-height: 1.6;
   padding: 2rem;
   z-index: 1;
+
+  @include resize(phone) {
+    padding: 0;
+  }
 }
 
 a,

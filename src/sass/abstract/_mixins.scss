@@ -1,0 +1,23 @@
+// MEDIA QUERIES MANAGER
+
+// FULL HD (FHD) = 1900 ++
+// TABLET = 650px - 1000px
+// PHONE = 0 - 600px
+
+@mixin resize($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 41em) {
+      @content;
+    } // 656px
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } // 1000px
+  }
+  @if $breakpoint == fhd {
+    @media only screen and (min-width: 118.75em) {
+      @content;
+    } // 1900px
+  }
+}

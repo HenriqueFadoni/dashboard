@@ -11,6 +11,10 @@
     grid-row-start: 2;
     grid-row-end: 3;
 
+    @include resize(phone) {
+      grid-column-start: 1;
+    }
+
     background-color: rgba($color-white, 0.25);
     justify-content: center;
     align-content: center;

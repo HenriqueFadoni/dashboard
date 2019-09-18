@@ -7,14 +7,16 @@
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: auto;
 
-    background-image: linear-gradient(
-      to right, 
-      $color-primary, 
-      $color-primary-lighten
-    );
+    background-image: linear-gradient(to right, $color-primary, $color-primary-lighten);
     border-radius: 0.5rem;
 
     box-shadow: 1.1rem 1rem 4.2rem -1.9rem $color-secondary;
+
+    @include resize(phone) {
+      grid-template-columns: 1fr;
+      border-radius: 0;
+      box-shadow: none;
+    }
   }
 
   &__header {
@@ -32,6 +34,14 @@
 
       justify-content: flex-end;
       align-items: flex-end;
+
+      @include resize(phone) {
+        grid-column-start: 0;
+        grid-column-end: -1;
+
+        grid-row-start: 0;
+        grid-row-end: -1;
+      }
     }
 
     &--text {
